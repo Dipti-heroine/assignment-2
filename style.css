@@ -1,0 +1,459 @@
+@import 'animate.css';
+
+/* 
+-------------------------
+    Universal Styles 
+-------------------------
+*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+}
+
+.colored-text {
+    color: #89A1EF;
+}
+
+section {
+    margin-bottom: 69px;
+}
+
+hr {
+    margin: 0;
+}
+
+/* 
+------------------------------
+    Navigation Bar Styles 
+------------------------------
+*/
+
+.container {
+    padding: 10px 120px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > ul >li {
+    list-style: none;
+    padding: 0px 20px 0px 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #2F2F2F;
+}
+
+.title {
+    font-size: 24px;
+}
+
+/* 
+---------------------
+    Head Section
+---------------------
+*/
+
+.section-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.half-width img {
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.animate__animated:hover {
+    animation: animate__tada;
+}
+
+.section-container .half-width {
+    width: 50%;
+    padding-left: 120px;
+}
+
+h1 {
+    font-size: 52px;
+    color: #2F2F2F;
+}
+
+button {
+    color: #2F2F2F;
+    background-color: #00a4e051;
+    width: 196px;
+    height: 44px;
+    border: none;
+    border-radius: 16px;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+}
+
+button:hover {
+    background-color: #89A1EF;
+}
+
+/* 
+------------------------
+    Sponsor Section 
+------------------------
+*/
+
+.sponsor {
+    padding: 0px 165px;
+}
+
+.sponsor img {
+    padding: 36px 31px 34px 31px;
+}
+
+/* 
+------------------------
+    Product Styles 
+------------------------
+*/
+.products-container > .product-title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 30px 196px;
+}
+
+.product {
+    width: 330px;
+    height: 475px;
+    box-shadow: 1px 0px 72px 7px rgb(0 0 255 / 20%); /*Wanted to change it but then I think it's look good. That's why I kept it.**/
+    border-radius: 5px;
+}
+
+.product:hover {
+    transform: scale(1.1);
+    transition: all .25s ease-in-out;
+}
+
+.product img {
+    width: 100%;
+    /* padding: 15px; */
+}
+
+.product {
+    padding: 15px;
+    padding-bottom: 26px;
+}
+
+.product > p {
+    display: flex;
+    align-items: center;
+}
+
+.product p:last-child {
+    color: #89A1EF;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product-name {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.price {
+    color: #2F2F2F;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.fa-solid {
+    color: #FB8200;
+}
+
+.ratings {
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.see-more > a {
+    text-decoration: none;
+    padding-left: 83%;
+}
+
+/* 
+---------------------------------
+    Bonus Section Newsletter 
+---------------------------------
+*/
+
+.newsletter-container {
+    display: flex;
+}
+
+.newsletter-container .half-width {
+    width: 50%;
+    padding-right: 124px;
+}
+
+.newsletter-container .half-width > img {
+    width: 86%;
+    padding-left: 120px;
+    background-image: none;
+}
+
+.half-width h1 {
+    margin-top: 120px;
+}
+
+.half-width input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* 
+----------------------
+    Footer Styles 
+----------------------
+*/
+
+footer {
+    color: #ffffff;
+    background-color: #2F2F2F;
+    text-align: center;
+    padding: 50px;
+}
+
+.social ul {
+    padding: 0;
+    font-size: 2em;
+}
+
+.social ul li {
+    display: inline;
+}
+
+.social i:hover {
+    transform: scale(1.5);
+    transition: all .2s ease-in-out;
+}
+
+/* 
+-----------------------
+    Responsiveness 
+-----------------------
+*/
+
+/* 
+-----------------------
+    Mobile Devices 
+-----------------------
+*/
+
+@media only screen and (max-width: 688px) {
+    /* 
+    ------------------------------
+        Navigation and Title  
+    ------------------------------
+    */
+    nav {
+        display: none;
+    }
+    
+    .container {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .title {
+        letter-spacing: 5px;
+    }
+    
+    /* 
+    ------------------------
+        Heading Section  
+    ------------------------
+    */
+    .section-container {
+        flex-direction: column;
+    }
+
+    .section-container .half-width {
+        width: 99%;
+        padding-left: 20px;
+    }
+
+    .half-width img {
+        width: 94%;
+    }
+
+    .half-width h1 {
+        margin-top: 60px;
+        margin-bottom: 4px;
+        font-size: 36px;
+    }
+
+    /* 
+    ------------------------
+        Sponsor Section  
+    ------------------------
+    */
+
+    hr {
+        display: none;
+    }
+
+    .sponsor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+    .sponsor img {
+        width: 36px;
+        padding: 22px 20px;
+    }
+
+    /* 
+    ------------------------
+        Product Section  
+    ------------------------
+    */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .product {
+        padding: 22px 8px;
+    }
+
+    .see-more > a {
+        padding-left: 270px;
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .newsletter-container .half-width > img {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .newsletter-container .half-width {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .half-width input {
+        width: 96%;
+        height: 22px;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    footer {
+        width: 80%;
+    }
+    
+    .social ul {
+        font-size: 1.5em;
+    }
+}
+
+/* 
+----------------------
+    Table Devices 
+----------------------
+*/
+
+@media only screen and (min-width: 688px) and (max-width: 1366px) { /*The max width has been changed to 1366px for iPad pro responsiveness */  
+    /* 
+    ------------------------------------
+        Heading and Navigation Bar 
+    ------------------------------------
+    */
+
+    .container {
+        padding: 5px 20px;
+    }
+
+    /* 
+    ------------------------
+        Heading Section  
+    ------------------------
+    */
+    .section-container .half-width {
+        padding-left: 20px;
+    }
+
+    /* 
+    ------------------------
+        Sponsor Section  
+    ------------------------
+    */
+
+    hr {
+        display: none;
+    }
+
+    .sponsor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 100px;
+    }
+
+    /* 
+    ------------------------
+        Product Section  
+    ------------------------
+    */
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+    }
+
+    /* 
+    ---------------------------
+        Newsletter Section  
+    ---------------------------
+    */
+
+    .newsletter-container .half-width {
+        padding-right: 0px;
+    }
+
+    .newsletter-container .half-width > img {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 100px;
+    }
+
+    /* 
+    --------------
+        Footer  
+    --------------
+    */
+
+    footer {
+        width: 100%;
+    }
+}
